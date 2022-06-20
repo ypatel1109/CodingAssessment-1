@@ -1,0 +1,23 @@
+#This programme is to find number of combination box(max200 items(100 apple,100 oranges),orange_small_box(max 50 items) 
+ and apple_small_box(max 50 items) required to fill given items.
+
+1.Check if apples and oranges are greater than 0,If less than 0 print error message.
+2.else procced to count combination box required,orange box and apple box required.
+2.1check if orange and apples is <= 0 If less than 0 print error message.
+2.2 else continue to check count for apples and oranges is > 0 for combination box first and than small box.
+	2.2.1 if oranges >= 100 and apples >= 100 than decrease apples and oranges by 100 each and increase combinationBox to 1.
+	2.2.2 if oranges >= 100 and apples < 100 than decrease oranges by 100 and set apples to 0 and increase combinationBox to 1.
+	2.2.3 if oranges < 100 and apples >= 10 than decrease apples by 100 and set oranges to 0 and increase combinationBox to 1.
+	2.2.4 else set oranges and apples to 0 and increase combinationBox to 1.
+	2.2.5 displany number of combination boxes.
+2.3 procced to count small box.
+2.3.1 procced to count oranges box requried.
+2.3.2 if oranges>=50, decrease orange by 50,increase orange box by 1.
+2.3.3 else set orange to 0,increase orange box by 1.
+2.3.4 repeat step 2.3.2 to 2.3.3 until orange< 0.
+2.3.5 print orange box required.
+2.4 process to count apple box requried.
+2.4.1 if apples >=50, decrease apple by 50,increase apple box by 1.
+2.4.2 else set apple to 0,increase apple box by 1.
+2.4.3 repeat step 2.3.2 to 2.3.3 until apples < 0.
+2.4.4 print apple box required.
